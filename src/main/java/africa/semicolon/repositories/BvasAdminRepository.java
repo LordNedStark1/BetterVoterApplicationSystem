@@ -1,8 +1,7 @@
 package africa.semicolon.repositories;
 
 import africa.semicolon.models.Admin;
-import africa.semicolon.models.Voter;
-import africa.semicolon.utils.IdGenerator;
+import africa.semicolon.utils.AppUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,7 @@ public class BvasAdminRepository implements AdminRepository{
 
     @Override
     public Admin save(Admin admin) {
-        admin.setId(IdGenerator.generateId());
+        admin.setId(AppUtils.generateId());
        admins.add(admin);
         return admin;
     }

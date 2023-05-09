@@ -1,7 +1,7 @@
 package africa.semicolon.repositories;
 
 import africa.semicolon.models.Voter;
-import africa.semicolon.utils.IdGenerator;
+import africa.semicolon.utils.AppUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ public class BvasVotersRepository implements VoterRepository {
 
     @Override
     public Voter findById(String id) {
-        for (Voter v :voters)
-            if (v.getId().equals(id)) return v;
+        for (Voter voter :voters)
+            if (voter.getId().equals(id)) return voter;
         return null;
     }
 
@@ -23,7 +23,7 @@ public class BvasVotersRepository implements VoterRepository {
 
     @Override
     public Voter save(Voter voter) {
-        voter.setId((IdGenerator.generateId()));
+        voter.setId((AppUtils.generateId()));
         voters.add(voter);
 
          return voter;

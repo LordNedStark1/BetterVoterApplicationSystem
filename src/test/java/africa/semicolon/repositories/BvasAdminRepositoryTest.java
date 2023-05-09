@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class BvasAdminRepositoryTest {
     private final BvasAdminRepository repository = new BvasAdminRepository();
     private Admin admin;
-    private UserInformation userInformation;
+
     private Admin savedAdmin;
     @BeforeEach
     void setUp(){
