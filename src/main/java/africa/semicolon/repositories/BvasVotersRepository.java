@@ -32,6 +32,6 @@ public class BvasVotersRepository implements VoterRepository {
     @Override
     public void deleteById(String id) {
         Voter voter = findById(id);
-        voters.remove(voter);
+        if(!(voter== null))voters.remove(voter);
     }
 }

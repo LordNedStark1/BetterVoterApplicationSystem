@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b43c7f15-3da2-46d1-87f4-ab92e620d731" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/models/UserInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/models/UserInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/repositories/BvasVotersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/repositories/BvasVotersRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/repositories/BvasVotersRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/repositories/BvasVotersRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,11 +45,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BvasVotersRepositoryTest">
+  <component name="RunManager" selected="JUnit.BvasAdminRepositoryTest">
+    <configuration name="BvasAdminRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BVASbeta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.repositories" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.repositories.BvasAdminRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BvasVotersRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BVASbeta" />
       <extension name="coverage">
@@ -52,6 +78,22 @@
       <option name="PACKAGE_NAME" value="africa.semicolon.repositories" />
       <option name="MAIN_CLASS_NAME" value="africa.semicolon.repositories.BvasVotersRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BvasVotersRepositoryTest.deleteVoterById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BVASbeta" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.repositories" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.repositories.BvasVotersRepositoryTest" />
+      <option name="METHOD_NAME" value="deleteVoterById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,7 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BvasAdminRepositoryTest" />
         <item itemvalue="JUnit.BvasVotersRepositoryTest" />
+        <item itemvalue="JUnit.BvasVotersRepositoryTest.deleteVoterById" />
         <item itemvalue="JUnit.BvasVotersRepositoryTest.testFindById" />
         <item itemvalue="JUnit.BvasVotersRepositoryTest.testSaveMethod" />
       </list>

@@ -5,6 +5,8 @@ import africa.semicolon.models.Voter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigInteger;
+
 import static org.junit.jupiter.api.Assertions.*;
 class BvasVotersRepositoryTest {
 
@@ -19,7 +21,7 @@ class BvasVotersRepositoryTest {
     }
 
     private Voter createVoter() {
-        voter = Voter.builder().age(23).name("bolanale").address(createAddress()).build();
+        Voter voter = Voter.builder().age(23).name("bolanale").address(createAddress()).build();
         return voter;
     }
 
@@ -41,5 +43,21 @@ class BvasVotersRepositoryTest {
         Voter voter1 = repository.save(voter);
         assertEquals(voter , repository.findById(voter1.getId()));
     }
+    @Test
+    void testSaveMultipleVoter(){
+        Voter secondVoter = repository.save(createVoter());
+        Voter thirdVoter = repository.save(createVoter());
+        assertNotNull(thirdVoter);
+        assertNotNull(secondVoter);
+        assertEquals(3, repository.findAll().size());
+    }
+    @Test
+    void deleteVoterById(){
+        Voter secondVoter = repository.save(createVoter());
+        assertEquals(BigInteger.valueOf(2).intValue(), repository.findAll().size());
+        repository.deleteById(savedVoter.getId());
+        assertEquals(1, repository.findAll().size());
 
+
+    }
 }
