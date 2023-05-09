@@ -11,9 +11,11 @@ class BvasVotersRepositoryTest {
     private final BvasVotersRepository repository = new BvasVotersRepository();
     private Voter voter;
     private Address address;
+    private Voter savedVoter;
     @BeforeEach
     void setUp(){
         voter = createVoter();
+        savedVoter = repository.save(voter);
     }
 
     private Voter createVoter() {
@@ -39,4 +41,5 @@ class BvasVotersRepositoryTest {
         Voter voter1 = repository.save(voter);
         assertEquals(voter , repository.findById(voter1.getId()));
     }
+
 }
