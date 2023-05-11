@@ -28,7 +28,7 @@ public class BvasPartyRepositoryTest {
     }
 
     private UserInformation createUserInformation() {
-        UserInformation userInformation1 = UserInformation.builder().userName("jibowu party").build();
+        UserInformation userInformation1 = UserInformation.builder().firstName("jibowu party").build();
         return userInformation1;
     }
 
@@ -37,7 +37,7 @@ public class BvasPartyRepositoryTest {
         Party party1 = repository.save(createParty());
         assertNotNull(party);
 
-        assertEquals("jibowu party", party1.getUserInformation().getUserName());
+        assertEquals("jibowu party", party1.getUserInformation().getFirstName());
     }
 
     @Test

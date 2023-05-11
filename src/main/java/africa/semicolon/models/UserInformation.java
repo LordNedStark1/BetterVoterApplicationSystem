@@ -11,7 +11,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserInformation {
     private String id;
-    private String userName;
+    private String firstName;
+    private String lastName;
     private String password;
 
 }

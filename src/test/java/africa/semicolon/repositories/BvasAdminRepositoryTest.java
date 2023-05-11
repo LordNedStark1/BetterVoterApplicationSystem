@@ -27,7 +27,7 @@ public class BvasAdminRepositoryTest {
     }
 
     private UserInformation createUserInformation() {
-        UserInformation userInformation1 = UserInformation.builder().userName("jibowu").build();
+        UserInformation userInformation1 = UserInformation.builder().firstName("jibowu").build();
         return userInformation1;
     }
 
@@ -36,7 +36,7 @@ public class BvasAdminRepositoryTest {
         Admin voter1 = repository.save(admin);
         assertNotNull(admin);
         assertEquals(admin.getId(), voter1.getId());
-        assertEquals("jibowu", voter1.getUserInformation().getUserName());
+        assertEquals("jibowu", voter1.getUserInformation().getFirstName());
     }
 
     @Test

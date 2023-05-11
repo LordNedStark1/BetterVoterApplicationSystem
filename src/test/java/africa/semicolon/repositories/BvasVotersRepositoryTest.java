@@ -21,7 +21,7 @@ class BvasVotersRepositoryTest {
     }
 
     private Voter createVoter() {
-        Voter voter = Voter.builder().age(23).name("bolanale").address(createAddress()).build();
+        Voter voter = Voter.builder().age(23).address(createAddress()).build();
         return voter;
     }
 

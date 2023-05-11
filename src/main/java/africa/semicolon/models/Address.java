@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 @Builder
 public class Address {
     private String houseNumber;
+    private String postalCode;
     private String street;
     private String town;
     private String city;

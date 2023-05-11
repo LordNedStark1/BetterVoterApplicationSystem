@@ -7,10 +7,16 @@ import lombok.Data;
 
 @Data
 public class VoterRegistrationRequest {
+    private String town;
+    private String postalCode;
+    private String country;
+    private String street;
+
     private String userName;
     private String password;
 
-    private String name;
+    private String firstName;
+    private String lastName;
     private String city;
     private String houseNumber;
     private String state;

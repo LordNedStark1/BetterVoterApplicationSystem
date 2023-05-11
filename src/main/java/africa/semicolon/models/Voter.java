@@ -14,7 +14,6 @@ public class Voter {
     private String id;
     private UserInformation userInformation;
     private String voterIdentificationNumber;
-    private String name;
     private Address address;
     private Integer age;
     private Gender gender;
