@@ -1,12 +1,14 @@
 package africa.semicolon.mappers;
 
+import africa.semicolon.dtos.requests.CreateElectionRequest;
 import africa.semicolon.dtos.requests.VoterRegistrationRequest;
+import africa.semicolon.dtos.response.CreateElectionResponse;
 import africa.semicolon.dtos.response.VoterRegistrationResponse;
-import africa.semicolon.models.Address;
-import africa.semicolon.models.Gender;
-import africa.semicolon.models.UserInformation;
-import africa.semicolon.models.Voter;
+import africa.semicolon.models.*;
 import africa.semicolon.utils.IdGenerator;
+
+import java.time.LocalDate;
+import java.util.List;
 
 public class ModelMapper {
     public static VoterRegistrationResponse mapVoterRequestToVoter(Voter voter){
@@ -55,6 +57,20 @@ public class ModelMapper {
                 .town(voterRegistrationRequest.getTown())
                 .houseNumber(voterRegistrationRequest.getHouseNumber())
                 .build();
+    }
+    public static Election map(CreateElectionRequest createElectionRequest){
+//        Category electionCategory = Category.valueOf( CreateElectionRequest.getElectionCategory().toUpperCase());
+//        LocalDate electionDate = LocalDate.parse(createElectionRequest.getElectionCategory());
+//
+//        List<Party> parties = createElectionRequest.getge
+//
+//        return Election.builder().category(electionCategory)
+//                .parties(parties)
+//                .date(electionDate)
+//                .localGovernmentArea(createElectionRequest.getLocalGovernment())
+//
+//                .build()
+        return null;
     }
 
 }

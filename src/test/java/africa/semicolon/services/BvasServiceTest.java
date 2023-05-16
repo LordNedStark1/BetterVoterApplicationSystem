@@ -23,7 +23,6 @@ public class BvasServiceTest {
 
 
     }
-
     private VoterRegistrationRequest mapper() {
         VoterRegistrationRequest voterRegistrationRequest = new VoterRegistrationRequest();
         voterRegistrationRequest.setAge(24);
@@ -81,7 +80,7 @@ public class BvasServiceTest {
 
         assertEquals("Voter Deleted", response.getMessage());
 
-        assertNull(deletedVoter);
+        assertNull(deletedVoter );
         assertEquals(0, voterServiceInterface.getAllVoters().size());
 
     }

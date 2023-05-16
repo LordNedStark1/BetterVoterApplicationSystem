@@ -20,7 +20,9 @@ public class BvasPartyRepository implements PartyRepository{
     public List<Party> findAll() {
         return parties;
     }
-
+    public Party findByName(String name) {
+        return parties.get(0);
+    }
     @Override
     public Party save(Party party) {
         party.setId(AppUtils.generateId());
